@@ -1,0 +1,142 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: trajan-pro-3, serif;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-container {
+    position: relative;
+}
+
+.header-container img {
+    width: 100%;
+}
+
+.navbar-background {
+    background: url(../img/divider.png);
+    content: "";
+    height: 50px;
+    bottom: -25px;
+    position: absolute;
+    width: 100%;
+    background-size: auto 200%;
+}
+
+.navbar-background:after {
+    background: url(../img/divider.png);
+    content: "";
+    height: 50px;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    background-size: auto 200%;
+    background-position: 100% 100%;
+}
+
+.nav-bar {
+    position: relative;
+    top: 5px;
+}
+
+.nav-bar a {
+    margin: 0px 30px
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.btn-aoe, .button.aoe {
+    border: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    line-height: 2;
+    padding-left: 2.5em;
+    margin-right: 2.5em;
+    background: url(https://static.ageofempires.com/aoe/wp-content/themes/msgpwebteam/dist/images/btn/button-age2_f139068d.png) 0 0;
+    background-size: auto 1000%;
+    color: #e3d9b7;
+    font-size: large;
+    text-align: center;
+    transition: color .5s;
+    text-decoration: none;
+    white-space: nowrap;
+    max-width: 27.5em;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.btn-aoe:after, .button.aoe:after {
+    content: "";
+    position: absolute;
+    right: -2.5em;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: url(https://static.ageofempires.com/aoe/wp-content/themes/msgpwebteam/dist/images/btn/button-age2_f139068d.png) 100% 0;
+    background-size: auto 1000%;
+    z-index: -1;
+}
+
+.btn-aoe:hover, .button.aoe:hover {
+    color: white;
+}
+
+/* MAIN */
+
+.main-container {
+    background: url(../img/background.png);
+    content: "";
+    padding: 10rem;
+    color: white
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.grid-item {
+    background: url(../img/box.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem;
+    color: #e3d9b7;
+    text-align: center;
+    box-shadow: 0 4px 4px rgb(0, 0, 0);
+    transition: box-shadow 0.3s ease-in-out, color 0.5s;
+}
+
+.grid-item:hover {
+    box-shadow: 0 5px 20px #e3d9b7;
+    color: white;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+.footer-container {
+    background-image: url(../img/footer-background.png);
+    content: "";
+    border: 15px solid transparent;
+    border-image: url(../img/border-bottom.png) 15 15 stretch;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.copyright p {
+    margin: 10px 0px;
+}
